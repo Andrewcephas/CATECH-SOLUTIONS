@@ -1,0 +1,106 @@
+/* Nav Hover Links */
+.nav-hover {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #017020 !important;
+  position: relative;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-hover::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #ff9900;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-hover:hover::after {
+  width: 100%;
+}
+
+.nav-hover:hover {
+  color: #ff9900 !important;
+}
+
+/* Sticky Navbar */
+.custom-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Announcement Bar */
+.announcement-bar a {
+  transition: color 0.3s ease-in-out;
+}
+
+.announcement-bar a:hover {
+  color: #ff9900;
+}
+
+/* Dropdown menu background + text */
+.navbar-collapse {
+  background-color: #f3f3ff !important;
+  padding: 10px 0;
+}
+
+.navbar-collapse .nav-link {
+  color: #017020 !important;
+  font-weight: bold;
+}
+
+.navbar-collapse .nav-link:hover {
+  background-color: #e0f7e9;
+  border-radius: 5px;
+}
+
+/* Hamburger Icon → Custom Lines */
+.custom-toggler .navbar-toggler-icon {
+  width: 30px;
+  height: 3px;
+  background-color: #017020;
+  display: block;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.custom-toggler .navbar-toggler-icon::before,
+.custom-toggler .navbar-toggler-icon::after {
+  content: '';
+  width: 30px;
+  height: 3px;
+  background-color: #017020;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.custom-toggler .navbar-toggler-icon::before {
+  top: -10px;
+}
+
+.custom-toggler .navbar-toggler-icon::after {
+  top: 10px;
+}
+
+/* When menu is open → turn hamburger into an X */
+.custom-toggler.open .navbar-toggler-icon {
+  background-color: transparent;
+}
+
+.custom-toggler.open .navbar-toggler-icon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.custom-toggler.open .navbar-toggler-icon::after {
+  transform: rotate(-45deg);
+  top: 0;
+}

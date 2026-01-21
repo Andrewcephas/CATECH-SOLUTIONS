@@ -1,0 +1,54 @@
+.cart-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.icon-container {
+  position: relative;
+}
+
+.counter {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 4px 8px;
+}
+
+.user-profile-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 14px;
+  cursor: pointer;
+  display: block;
+  margin-top: 5px;
+}
+
+.logout-btn:hover {
+  text-decoration: underline;
+}

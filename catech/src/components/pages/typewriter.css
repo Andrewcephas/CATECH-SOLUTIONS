@@ -1,0 +1,29 @@
+/* Typewriter effect */
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 0.15em solid #890010;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 4s steps(10) 1s 1 normal both,
+    blinkCaret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkCaret {
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: #890010; /* Caret color */
+  }
+}

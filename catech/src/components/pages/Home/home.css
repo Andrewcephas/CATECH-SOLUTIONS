@@ -1,0 +1,11 @@
+body,
+html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Prevent overflow on specific elements that might cause the issue */
+* {
+  box-sizing: border-box;
+}

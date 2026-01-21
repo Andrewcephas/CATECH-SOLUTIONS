@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Carousel item fixed size */
+.carousel-item {
+  width: 100%;
+  height: 600px; /* Fixed height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+ background-color: #5c5c5c;    /*Optional: adds black background behind images */
+}
+
+/* Image fits perfectly in the box without overlapping */
+.carousel-item img {
+  padding: 2rem 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Fits inside the box, no crop, no overlap */
+  object-position: center;
+}
+
+/* Overlay becomes a gradient from center to top, stays transparent */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(to bottom , rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 0%); */
+  z-index: 1;
+  pointer-events: none; /* So it doesn't block clicks */
+}
+
+/* Button stays positioned well */
+.carousel-item .container {
+  position: absolute;
+  z-index: 2;
+  bottom: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+
+
+
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 450px;
+  }
+
+  .carousel-item img {
+    object-fit: cover; /* Adjusts to fill the box */
+    object-position: center;
+  }
+}

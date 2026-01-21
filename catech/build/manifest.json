@@ -1,0 +1,30 @@
+{
+  "short_name": "CATECH",
+  "name": "CATECH SOLUTIONS AND GRAPHICS",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "author": "CATECH",
+  "homepage_url": "https://catech.co.ke",
+  "description": "CATECH is a platform that connects Developers  with tutors for personalized  experiences.",
+  "icons": [
+    {
+      "src": "CATECH LOGO.PNG",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "CATECH LOGO.PNG",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "CATECH LOGO.PNG",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

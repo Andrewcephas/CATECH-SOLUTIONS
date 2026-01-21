@@ -1,0 +1,14 @@
+.service-icon {
+  font-size: 4rem;
+  color: #890010;
+}
+
+.icon-container {
+  width: 80px;
+  height: 80px;
+  background-color: #f5e4e6;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
